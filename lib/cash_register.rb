@@ -40,8 +40,8 @@
              @items.compact
         end
         
-        #def void_last_transaction
-          #  @total -= @price
-          #  @last_transaction - @price * @quantity
-        #end
+        def void_last_transaction
+          @total -= @price
+          @last_transaction - @price * @quantity
+        end
 end
