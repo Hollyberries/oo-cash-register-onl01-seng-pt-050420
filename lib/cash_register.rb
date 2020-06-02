@@ -1,3 +1,4 @@
+  'require Pry 
  class CashRegister
       attr_accessor :total, :discount, :title, :items, :last_transaction
       
