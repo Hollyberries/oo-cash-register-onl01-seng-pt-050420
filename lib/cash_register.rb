@@ -30,7 +30,7 @@
             if @discount > 0 
             @discounted_amount = (@price * @discount)/100
             @total = @price - @discounted_amount
-                "After the discount, the total comes to #{@total}."
+                "After the discount, the total comes to $#{@total}."
             else
                 "There is no discount to apply."  
             end
