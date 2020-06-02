@@ -4,7 +4,6 @@
       def initialize(discount = 0)
         @total = 0
         @discount = discount
-        @last_transaction = 0
         @items = []
         @items << title
         
