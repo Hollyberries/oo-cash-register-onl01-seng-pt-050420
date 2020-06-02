@@ -1,4 +1,4 @@
-class CashRegister
+ class CashRegister
       attr_accessor :total, :discount, :title, :items, :last_transaction
       
       def initialize(discount = 0)
@@ -41,8 +41,6 @@ class CashRegister
         
         def void_last_transaction
             @total -= @price
-            if @last_transaction > @total 
-              puts 0.0
-            end
+            @last_transaction - @price * @quantity
         end
 end
